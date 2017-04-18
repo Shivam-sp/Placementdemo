@@ -63,8 +63,8 @@ public class Login_Server extends HttpServlet {
             Username = request.getParameter("username");
             Password = request.getParameter("password");
             Candidate_Profile_Object cpo = new Candidate_Profile_Object();
-            Candidate_Profile_Operation cpop = new Candidate_Profile_Operation();
-            out.println(cpop.getError());
+           // Candidate_Profile_Operation cpop = new Candidate_Profile_Operation();
+           // out.println(cpop.getError());
             
             cpo.setCandidate_ID(Username);
             cpo.setPassword(Password);
@@ -87,11 +87,11 @@ public class Login_Server extends HttpServlet {
                     System.err.println(name);
                     if(name.equals("admin"))
                     {
-                       // out.println("admatch");
+                        out.println("admatch");
                     }
                     else
                     {
-                   // out.println("UPMatched"+"-"+name+"-"+uimg);
+                    out.println("UPMatched"+"-"+name+"-"+uimg);
                     break;
                     }
                 }
