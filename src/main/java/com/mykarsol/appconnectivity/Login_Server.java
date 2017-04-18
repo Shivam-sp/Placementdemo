@@ -70,7 +70,7 @@ public class Login_Server extends HttpServlet {
             cpo.setPassword(Password);
             //out.println(Username);
             //out.println(Password);
-            Candidate_Profile_Operation cpop = new Candidate_Profile_Operation();
+            //Candidate_Profile_Operation cpop = new Candidate_Profile_Operation();
             //cpop.RetriveCandidateDetails(cpo);
             // out.println(cpop);
             String usn,usp,name,uimg;
