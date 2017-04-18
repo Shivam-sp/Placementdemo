@@ -37,7 +37,7 @@ public class Candidate_Profile_Operation
     PreparedStatement pstmt;
     Statement stmt;
     Scanner sc = new Scanner(System.in);
-   public Strinn msg="";
+   public String msg="";
     public Candidate_Profile_Operation()
     {
         try
