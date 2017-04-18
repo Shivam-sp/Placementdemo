@@ -29,7 +29,7 @@ import java.util.logging.Logger;
 public class Candidate_Profile_Operation 
 {
     Connection con=null;
-    String url="jdbc:mysql://fock27f4fz512g18:puc2ocwfqnvrxed1@vvfv20el7sb2enn3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/uioyzcynsq8h3m7h";
+    String url="jdbc:mysql://vvfv20el7sb2enn3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/uioyzcynsq8h3m7h";
     String un="fock27f4fz512g18";
     String pass="puc2ocwfqnvrxed1";
     ResultSet rs=null;
