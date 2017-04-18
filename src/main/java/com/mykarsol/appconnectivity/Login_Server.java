@@ -63,6 +63,8 @@ public class Login_Server extends HttpServlet {
             Username = request.getParameter("username");
             Password = request.getParameter("password");
             Candidate_Profile_Object cpo = new Candidate_Profile_Object();
+            out.println(cpo.getError());
+            /*
             cpo.setCandidate_ID(Username);
             cpo.setPassword(Password);
             //out.println(Username);
@@ -96,7 +98,7 @@ public class Login_Server extends HttpServlet {
                 {
                     out.println("NotMatched"+usn+usp);
                 }
-            }
+            }*/
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         }
