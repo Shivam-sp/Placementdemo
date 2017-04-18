@@ -61,7 +61,7 @@ public class Admin_Get_Technology extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     static final String JDBC_DRIVER="com.mysql.jdbc.Driver";  
-      static final String DB_URL="mysql://fock27f4fz512g18:puc2ocwfqnvrxed1@vvfv20el7sb2enn3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/uioyzcynsq8h3m7h
+      static final String DB_URL="jdbc:mysql://fock27f4fz512g18:puc2ocwfqnvrxed1@vvfv20el7sb2enn3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/uioyzcynsq8h3m7h
 
 ";
       //  Database credentials
