@@ -37,7 +37,7 @@ public class Candidate_Profile_Operation
     PreparedStatement pstmt;
     Statement stmt;
     Scanner sc = new Scanner(System.in);
-
+   public Strinn msg="";
     public Candidate_Profile_Operation()
     {
         try
@@ -45,13 +45,21 @@ public class Candidate_Profile_Operation
          //jdbc two lines load driver and connetion
         Class.forName("com.mysql.jdbc.Driver");
         System.out.println("Driver Loaded");
+            msg=msg+"loaded";
         con=DriverManager.getConnection(url,un,pass);
         System.out.println("Connected");
+            msg=msg+"connectd";
         } catch (ClassNotFoundException ex) {
             System.out.println(ex.getMessage());
+            msg=msg+ex.getMessage();
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
+                msg=msg+ex.getMessage();
         }
+    }
+    public String getError()
+    {
+         return msg;
     }
     
     public ArrayList<Candidate_Profile_Object> allids() throws SQLException
@@ -60,10 +68,12 @@ public class Candidate_Profile_Operation
       String msg="";
      // Candidate_Profile_Object cpob=new Candidate_Profile_Object();
         String sql="select * from candidate_profile";
-          stmt=con.createStatement();
-              rs=stmt.executeQuery(sql);
+          
         
         try {
+            stmt=con.createStatement();
+              rs=stmt.executeQuery(sql);
+            msg=msg+"72";
             while(rs.next())
             {
               Candidate_Profile_Object cpo=new Candidate_Profile_Object();
@@ -118,6 +128,7 @@ public class Candidate_Profile_Operation
                  
             }
         } catch (SQLException ex) {
+            msg=msg+ex.getMessage();
             Logger.getLogger(Candidate_Profile_Operation.class.getName()).log(Level.SEVERE, null, ex);
         }
             
