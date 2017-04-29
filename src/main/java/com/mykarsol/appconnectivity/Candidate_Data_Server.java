@@ -59,7 +59,7 @@ public class Candidate_Data_Server extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-     static final String JDBC_DRIVER="com.mysql.jdbc.Driver";  
+    static final String JDBC_DRIVER="com.mysql.jdbc.Driver";  
       static final String DB_URL="jdbc:mysql://vvfv20el7sb2enn3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/uioyzcynsq8h3m7h";
       //  Database credentials
       static final String USER = "fock27f4fz512g18";
