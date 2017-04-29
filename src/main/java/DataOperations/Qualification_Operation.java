@@ -26,9 +26,9 @@ import java.util.logging.Logger;
 public class Qualification_Operation 
 {
     Connection con=null;
-    String url="jdbc:mysql://localhost:3306/placementapp";
-    String un="root";
-    String pass="8128";
+    String url="jdbc:mysql://vvfv20el7sb2enn3.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/uioyzcynsq8h3m7h";
+    String un="fock27f4fz512g18";
+    String pass="puc2ocwfqnvrxed1";
     
     ResultSet rs=null;
     
