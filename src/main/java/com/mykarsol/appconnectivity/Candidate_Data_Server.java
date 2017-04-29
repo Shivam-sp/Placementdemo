@@ -82,7 +82,7 @@ public class Candidate_Data_Server extends HttpServlet {
             String sql;
             String candidate_id=request.getParameter("candidate_id");
             System.out.println("----"+candidate_id);
-            sql = "select Firstname,Image,Degree from  candidate_profile ,qualification where candidate_profile.candidate_id=?";
+            sql = "select Firstname,Image,Degree from  candidate_profile ,qualification where Candidate_ID=?";
             //Candidate_Profile_Object cpo=new Candidate_Profile_Object();
             //cpo.setCandidate_ID(candidate_id);
             pstmt=conn.prepareStatement(sql);
