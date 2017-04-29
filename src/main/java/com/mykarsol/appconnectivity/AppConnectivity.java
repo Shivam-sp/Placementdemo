@@ -69,7 +69,7 @@ public class AppConnectivity extends HttpServlet {
       Email = request.getParameter("email");
       Address = request.getParameter("address");
       City = request.getParameter("city");
-      Image = request.getParameter("imagepath");
+      //Image = request.getParameter("imagepath");
       Password = request.getParameter("password");
       String D=request.getParameter("dob");
       SimpleDateFormat sdf=new SimpleDateFormat("dd-mm-yyyy");
@@ -91,7 +91,7 @@ public class AppConnectivity extends HttpServlet {
       cpo.setAddress(Address);
       cpo.setPincode(Pincode);
       cpo.setCity(City);
-      cpo.setImage(Image);
+      //cpo.setImage(Image);
       cpo.setPassword(Password);
       
       
